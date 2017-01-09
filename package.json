@@ -1,25 +1,26 @@
 {
-  "name": "innocode-еуіе",
+  "name": "intersono",
   "version": "1.0.0",
-  "description": "test",
+  "description": "site",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp watch",
-    "build": "gulp build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp"
   },
+  "repository": {
+    "type": "git",
+    "url": "skatt931"
+  },
+  "keywords": [
+    "adaptive"
+  ],
   "author": "Ihor Kurnytskyi",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.5",
-    "cache": "^1.1.2",
+    "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-cache": "^0.4.5",
-    "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-sass": "^3.0.0",
-    "imagemin-pngquant": "^5.0.0"
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.3.2"
   }
 }
