@@ -1,0 +1,62 @@
+
+@media screen and (max-width: 940px){
+  .wrapper {
+    width: 97%;
+  }
+}
+@media screen and (max-width: 794px){
+  .wrapper {
+    padding: 5%;
+    .article {
+      .title {
+        img {
+          margin: 0 15px 0 0;
+          position: inherit;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px){
+  .date {
+    &.date_about {
+      margin-right: 8px;
+    }
+  }
+}
+@media screen and (max-width: 585px){
+  .date {
+    &.date_about_txt {
+      display: block;
+    }
+  }
+  .wrapper {
+    .article {
+      .title {
+        font-size: 29px;
+      }
+      .artcl_pic {
+        margin: 0 0 15px;
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px){
+  .wrapper {
+    padding: 3%;
+    .comments {
+      .comment_wrap {
+        .author {
+          margin-right: 5px;
+          .avatar {
+            width: 40px;
+            &.ava_min {
+              width: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

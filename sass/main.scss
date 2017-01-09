@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Conv_stag-book';
   src: url('../fonts/stag-book.eot');
-  src: local('☺'), url('../fonts/stag-book.woff') format('woff'), url('../fonts/stag-book.ttf') format('truetype');
+  src: local('☺'), url('../app/fonts/stag-book.woff') format('woff'), url('../app/fonts/stag-book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Conv_stag-medium';
   src: url('../fonts/stag-medium.eot');
-  src: local('☺'), url('../fonts/stag-medium.woff') format('woff'), url('../fonts/stag-medium.ttf') format('truetype');
+  src: local('☺'), url('../app/fonts/stag-medium.woff') format('woff'), url('../app/fonts/stag-medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +18,7 @@
 @font-face {
   font-family: 'Conv_stag-semibold';
   src: url('../fonts/stag-semibold.eot');
-  src: local('☺'), url('../fonts/stag-semibold.woff') format('woff'), url('../fonts/stag-semibold.ttf') format('truetype');
+  src: local('☺'), url('../app/fonts/stag-semibold.woff') format('woff'), url('../app/fonts/stag-semibold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -233,5 +233,6 @@ body {
     }
   }
 }
+
 
 @import 'media';

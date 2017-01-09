@@ -2,21 +2,21 @@
 @font-face {
   font-family: 'Conv_stag-book';
   src: url("../fonts/stag-book.eot");
-  src: local("☺"), url("../fonts/stag-book.woff") format("woff"), url("../fonts/stag-book.ttf") format("truetype");
+  src: local("☺"), url("../app/fonts/stag-book.woff") format("woff"), url("../app/fonts/stag-book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Conv_stag-medium';
   src: url("../fonts/stag-medium.eot");
-  src: local("☺"), url("../fonts/stag-medium.woff") format("woff"), url("../fonts/stag-medium.ttf") format("truetype");
+  src: local("☺"), url("../app/fonts/stag-medium.woff") format("woff"), url("../app/fonts/stag-medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Conv_stag-semibold';
   src: url("../fonts/stag-semibold.eot");
-  src: local("☺"), url("../fonts/stag-semibold.woff") format("woff"), url("../fonts/stag-semibold.ttf") format("truetype");
+  src: local("☺"), url("../app/fonts/stag-semibold.woff") format("woff"), url("../app/fonts/stag-semibold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -185,3 +185,37 @@ body {
       left: 190px; }
     .wrapper .comments .load:before {
       right: 190px; }
+
+@media screen and (max-width: 940px) {
+  .wrapper {
+    width: 97%; } }
+
+@media screen and (max-width: 794px) {
+  .wrapper {
+    padding: 5%; }
+    .wrapper .article .title img {
+      margin: 0 15px 0 0;
+      position: inherit; } }
+
+@media screen and (max-width: 700px) {
+  .date.date_about {
+    margin-right: 8px; } }
+
+@media screen and (max-width: 585px) {
+  .date.date_about_txt {
+    display: block; }
+  .wrapper .article .title {
+    font-size: 29px; }
+  .wrapper .article .artcl_pic {
+    margin: 0 0 15px;
+    width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    padding: 3%; }
+    .wrapper .comments .comment_wrap .author {
+      margin-right: 5px; }
+      .wrapper .comments .comment_wrap .author .avatar {
+        width: 40px; }
+        .wrapper .comments .comment_wrap .author .avatar.ava_min {
+          width: 40px; } }
