@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'Conv_stag-book';
+  src: url('../fonts/stag-book.eot');
+  src: local('☺'), url('../fonts/stag-book.woff') format('woff'), url('../fonts/stag-book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_stag-medium';
+  src: url('../fonts/stag-medium.eot');
+  src: local('☺'), url('../fonts/stag-medium.woff') format('woff'), url('../fonts/stag-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Conv_stag-semibold';
+  src: url('../fonts/stag-semibold.eot');
+  src: local('☺'), url('../fonts/stag-semibold.woff') format('woff'), url('../fonts/stag-semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a, h2, p {
+  margin: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.date {
+  font-family: 'Conv_stag-medium';
+  font-size: 15px;
+  color: #b6b6b6;
+  margin: 5px 0 8px;
+  &.date_about {
+    display: inline;
+    margin-right: 48px;
+    span {
+      font-weight: 600;
+    }
+    i {
+      margin: 0 5px 0 1px;
+    }
+  }
+  &.name {
+    font-weight: 500;
+    color: #777777;
+  }
+  &.posted {
+    margin: 0 7px 0 0;
+    display: inline-block;
+    letter-spacing: 0.06em;
+
+  }
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.back_img {
+  width: 100%;
+  margin-bottom: -86px;
+  img {
+    width: 100%;
+  }
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 40px 81px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  .article {
+    .title {
+      font-family: 'Conv_stag-semibold';
+      font-size: 30px;
+      color: #454545;
+      position: relative;
+      border-bottom: 2px solid #f2f2f2;
+      line-height: 38px;
+      img {
+        position: absolute;
+        left: 0;
+        margin-left: -56px;
+        top: 2px;
+      }
+    }
+    .article_txt {
+      font-family: 'Conv_stag-book';
+      font-size: 17px;
+      color: #454545;
+      margin-bottom: 25px;
+      text-align: justify;
+      line-height: 25px;
+    }
+    .artcl_pic {
+      float: left;
+      border: 5px solid #f2f2f2;
+      margin: 0 20px 20px -86px;
+    }
+    .about_article {
+      border: 2px solid #f2f2f2;
+      border-left: none;
+      border-right: none;
+      padding: 12px 0;
+
+    }
+  }
+  .comments {
+    .com_title {
+      font-family: 'Conv_stag-medium';
+      color: #454545;
+      font-size: 30px;
+      margin: 33px 0 39px;
+    }
+    .comment_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 10px;
+      &.comment_wrap_border {
+        border-bottom: 2px solid #f2f2f2;
+        margin-bottom: 39px;
+      }
+      &.comment_wrap_posted {
+        padding-bottom: 8px;
+      }
+      &.no_comment_to_comment {
+        padding-bottom: 32px;
+      }
+      .to_comment {
+        padding-top: 19px;
+        .comment_to_comment {
+          padding-bottom: 31px;
+        }
+      }
+      .author {
+        padding: 2px;
+        border: 2px solid #ebedee;
+        border-radius: 4px;
+        margin-right: 21px;
+        .avatar {
+          border-radius: 4px;
+          display: block;
+          &.ava_min {
+            width: 60px;
+          }
+        }
+      }
+      .posted_info {
+        line-height: 20px;
+        padding: 0 0 10px;
+      }
+      .txt_input {
+        flex-grow: 1;
+        .txt {
+          border: 2px solid #ebedee;
+          border-radius: 4px;
+          height: 88px;
+          font-family: 'Conv_stag-book';
+          font-size: 17px;
+          resize: none;
+          padding: 8px 15px;
+        }
+        .btn {
+          border-radius: 4px;
+          margin-top: 9px;
+          background-color: #f1c40f;
+          font-family: 'Conv_stag-medium';
+          color: #454545;
+          font-size: 17px;
+          text-transform: capitalize;
+          padding: 0;
+          line-height: 44px;
+          width: 140px;
+          box-shadow: none;
+          height: auto;
+        }
+        .txt_message {
+          font-family: 'Conv_stag-book';
+          font-size: 17px;
+          color: #454545;
+          margin-bottom: 10px;
+
+        }
+      }
+    }
+    .load {
+      text-transform: inherit;
+      background-color: inherit;
+      border-radius: 0;
+      color: #b6b6b6;
+      font-size: 17px;
+      border: 2px solid #f2f2f2;
+      box-shadow: none;
+      width: 182px;
+      height: 40px;
+      text-align: center;
+      padding: 0;
+      line-height: 40px;
+      letter-spacing: -1px;
+      display: block;
+      margin: 9px auto 0;
+      position: relative;
+      overflow: visible;
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        width: 290px;
+        height: 2px;
+        background-color: #f2f2f2;
+        top: 17px;
+      }
+      &:after {
+        left: 190px;
+
+      }
+      &:before {
+        right: 190px;
+
+      }
+    }
+  }
+}
+
+@import 'media';
