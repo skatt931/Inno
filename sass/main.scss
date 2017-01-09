@@ -1,7 +1,15 @@
 @font-face {
+  font-family: 'Conv_stag-light';
+  src: url('../fonts/stag-light.otf');
+  src: local('☺'), url('../fonts/stag-light.otf') format('woff'), url('../fonts/stag-light.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Conv_stag-book';
   src: url('../fonts/stag-book.eot');
-  src: local('☺'), url('../app/fonts/stag-book.woff') format('woff'), url('../app/fonts/stag-book.ttf') format('truetype');
+  src: local('☺'), url('../fonts/stag-book.woff') format('woff'), url('../fonts/stag-book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +17,7 @@
 @font-face {
   font-family: 'Conv_stag-medium';
   src: url('../fonts/stag-medium.eot');
-  src: local('☺'), url('../app/fonts/stag-medium.woff') format('woff'), url('../app/fonts/stag-medium.ttf') format('truetype');
+  src: local('☺'), url('../fonts/stag-medium.woff') format('woff'), url('../fonts/stag-medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +26,7 @@
 @font-face {
   font-family: 'Conv_stag-semibold';
   src: url('../fonts/stag-semibold.eot');
-  src: local('☺'), url('../app/fonts/stag-semibold.woff') format('woff'), url('../app/fonts/stag-semibold.ttf') format('truetype');
+  src: local('☺'), url('../fonts/stag-semibold.woff') format('woff'), url('../fonts/stag-semibold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,7 +42,7 @@ a, h2, p {
 }
 
 .date {
-  font-family: 'Conv_stag-medium';
+  font-family: 'Conv_stag-light';
   font-size: 15px;
   color: #b6b6b6;
   margin: 5px 0 8px;
@@ -42,15 +50,17 @@ a, h2, p {
     display: inline;
     margin-right: 48px;
     span {
-      font-weight: 600;
+        font-weight: 200;
+        font-family: 'Conv_stag-book';
     }
     i {
       margin: 0 5px 0 1px;
     }
   }
   &.name {
-    font-weight: 500;
-    color: #777777;
+    font-family: 'Conv_stag-medium';
+      font-size: 16px;
+    color: #212020;
   }
   &.posted {
     margin: 0 7px 0 0;
@@ -168,14 +178,14 @@ body {
           border: 2px solid #ebedee;
           border-radius: 4px;
           height: 88px;
-          font-family: 'Conv_stag-book';
+          font-family: 'Conv_stag-light';
           font-size: 17px;
           resize: none;
           padding: 8px 15px;
         }
         .btn {
-          border-radius: 4px;
-          margin-top: 9px;
+          border-radius: 6px;
+          margin-top: 6px;
           background-color: #f1c40f;
           font-family: 'Conv_stag-medium';
           color: #454545;
@@ -188,7 +198,8 @@ body {
           height: auto;
         }
         .txt_message {
-          font-family: 'Conv_stag-book';
+          font-family: 'Conv_stag-light';
+          font-weight: 600;
           font-size: 17px;
           color: #454545;
           margin-bottom: 10px;
